@@ -5,6 +5,8 @@ import bannerEvento3 from "../../assets/banner-3.png"
 import visao from "../../assets/visao-img.png"
 import logoEvent from "../../assets/logo-event.svg"
 
+import Carrossel from "../../components/carrossel/Carrossel"
+
 function Home() {
     return (
         <>
@@ -22,10 +24,10 @@ function Home() {
                 </div>
             </header>
 
+
             <main>
-                <section id="section1" className="home-banner">
-                    <img src={bannerEvento1} alt="banner-evento-1"></img>
-                </section>
+                
+            <Carrossel/>
 
                 <section className="home-visao">
                     <div className="home-visao-container">
@@ -40,7 +42,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section id="eventos" className="home-eventos">
+                <section id="evento" className="home-eventos">
                     <div className="home-titulo">
                         <h2>Próximos eventos</h2>
                         <hr></hr>
